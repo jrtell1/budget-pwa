@@ -1,6 +1,6 @@
 {
-  "name": "budget-pwa",
-  "short_name": "budget-pwa",
+  "name": "Budgeting App",
+  "short_name": "Budget App",
   "icons": [
     {
       "src": "/img/icons/android-chrome-192x192.png",

@@ -34,12 +34,12 @@
                 <md-table-head>Type</md-table-head>
                 <md-table-head>Actions</md-table-head>
               </md-table-row>
-              <md-table-row v-for="category in categories" :key="category.name">
+              <md-table-row v-for="category in categories" :key="category.id">
                 <md-table-cell>{{ category.name }}</md-table-cell>
                 <md-table-cell>{{ getTypeName(category.typeId) }}</md-table-cell>
                 <md-table-cell>
                   <md-button class="md-accent">Edit</md-button>
-                  <md-button class="md-danger">Remove</md-button>
+                  <md-button class="md-danger" @click="deleteCategory(category.id)">Remove</md-button>
                 </md-table-cell>
               </md-table-row>
             </md-table>
@@ -99,6 +99,10 @@
           verticalAlign: 'top',
           type: 'success'
         });
+      },
+
+      deleteCategory(id) {
+        return this.$store.commit('removeCategory', id);
       },
 
       getTypeName(id) {

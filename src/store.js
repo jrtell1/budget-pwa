@@ -5,9 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    categories: [
-      { name: 'asdf', typeId: 'income' }
-    ],
+    categories: [],
     categoryTypes: [
       { id: 'income', name: 'Income' },
       { id: 'expense', name: 'Expense'}
@@ -28,9 +26,17 @@ export default new Vuex.Store({
 
     addCategory(state, payload) {
       state.categories.push({
+        id: Math.random().toString(36).substr(2, 9),
         name: payload.name,
         typeId: payload.typeId
       });
+
+      localStorage.setItem('categories', JSON.stringify(state.categories));
+    },
+
+    removeCategory(state, payload) {
+      const index = state.categories.indexOf(payload);
+      state.categories.splice(index, 1);
 
       localStorage.setItem('categories', JSON.stringify(state.categories));
     }

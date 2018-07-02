@@ -38,7 +38,6 @@
                 <md-table-cell>{{ category.name }}</md-table-cell>
                 <md-table-cell>{{ getTypeName(category.typeId) }}</md-table-cell>
                 <md-table-cell>
-                  <md-button class="md-accent">Edit</md-button>
                   <md-button class="md-danger" @click="deleteCategory(category.id)">Remove</md-button>
                 </md-table-cell>
               </md-table-row>

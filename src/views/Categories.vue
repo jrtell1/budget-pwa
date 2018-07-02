@@ -90,7 +90,15 @@
         this.$store.commit('addCategory', {
           name: this.newCategory.name,
           typeId: this.newCategory.typeId
-        })
+        });
+
+        this.$notify({
+          message: `<b>${this.newCategory.name}</b> - has been added!`,
+          icon: 'add_alert',
+          horizontalAlign: 'right',
+          verticalAlign: 'top',
+          type: 'success'
+        });
       },
 
       getTypeName(id) {

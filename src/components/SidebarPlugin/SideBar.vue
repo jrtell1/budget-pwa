@@ -7,9 +7,9 @@
         </div>
       </a>
 
-      <a href="https://www.creative-tim.com/product/vue-material-dashboard" target="_blank" class="simple-text logo-normal">
-        {{title}}
-      </a>
+      <router-link to="/" class="simple-text logo-normal">
+        {{ title }}
+      </router-link>
     </div>
     <div class="sidebar-wrapper">
       <slot name="content"></slot>
@@ -26,6 +26,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import SidebarLink from './SidebarLink.vue'
 import MobileMenu from '@/views/Layout/MobileMenu.vue'

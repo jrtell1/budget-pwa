@@ -22,7 +22,6 @@ export default {
   },
   data () {
     return {
-      selected: [],
       users: [
         {
           name: 'Dakota Rice',

@@ -1,13 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import DashboardLayout from './views/Layout/DashboardLayout.vue'
-import Dashboard from './views/Dashboard.vue'
-import UserProfile from './views/UserProfile.vue'
-import TableList from './views/TableList.vue'
-import Typography from './views/Typography.vue'
-import Icons from './views/Icons.vue'
-import Notifications from './views/Notifications.vue'
+import DashboardLayout from './views/Layout/DashboardLayout'
+import Dashboard from './views/Dashboard'
+import UserProfile from './views/UserProfile'
+import TableList from './views/TableList'
+import Typography from './views/Typography'
+import Icons from './views/Icons'
+import Notifications from './views/Notifications'
+import Categories from './views/Categories'
 
 Vue.use(Router);
 
@@ -20,6 +21,11 @@ const routes = [{
       path: 'dashboard',
       name: 'Dashboard',
       component: Dashboard
+    },
+    {
+      path: 'categories',
+      name: 'Categories',
+      component: Categories
     },
     {
       path: 'user',

@@ -24,7 +24,7 @@
                 </md-field>
               </div>
               <div class="md-layout-item md-small-size-40 md-size-20">
-                <md-button class="md-success" :disabled="isFormValid" @click="addNewCategory">Add</md-button>
+                <md-button class="md-success" :disabled="isFormInvalid" @click="addNewCategory">Add</md-button>
               </div>
             </div>
 
@@ -78,14 +78,14 @@
         return this.$store.state.categoryTypes;
       },
 
-      isFormValid() {
+      isFormInvalid() {
         return this.newCategory.name === '' || this.newCategory.typeId === '';
       }
     },
 
     methods: {
       addNewCategory() {
-        if (this.isFormValid) return;
+        if (this.isFormInvalid) return;
 
         this.$store.commit('addCategory', {
           name: this.newCategory.name,

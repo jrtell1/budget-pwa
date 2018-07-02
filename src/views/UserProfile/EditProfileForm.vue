@@ -80,13 +80,15 @@
 <script>
 export default {
   name: 'edit-profile-form',
+
   props: {
     dataBackgroundColor: {
       type: String,
       default: ''
     }
   },
-  data () {
+
+  data() {
     return {
       username: null,
       disabled: null,
@@ -103,6 +105,3 @@ export default {
 }
 
 </script>
-<style>
-
-</style>

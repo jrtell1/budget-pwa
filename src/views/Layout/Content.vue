@@ -3,9 +3,7 @@
     <router-view></router-view>
   </transition>
 </template>
-<script>
-export default{}
-</script>
+
 <style>
   .fade-enter-active,
   .fade-leave-active {
@@ -13,10 +11,7 @@ export default{}
   }
 
   .fade-enter,
-  .fade-leave-to
-    /* .fade-leave-active in <2.1.8 */
-
-  {
+  .fade-leave-to {
     opacity: 0
   }
 </style>

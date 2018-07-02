@@ -54,8 +54,8 @@
 
 <script>
 
-export default{
-  data () {
+export default {
+  data() {
     return {
       selectedEmployee: null,
       employees: [
@@ -70,6 +70,7 @@ export default{
       ]
     }
   },
+
   methods: {
     toggleSidebar () {
       this.$sidebar.displaySidebar(!this.$sidebar.showSidebar)
@@ -77,6 +78,3 @@ export default{
   }
 }
 </script>
-
-<style lang="css">
-</style>

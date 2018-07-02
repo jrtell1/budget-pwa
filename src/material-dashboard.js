@@ -11,7 +11,7 @@ import './assets/scss/material-dashboard.scss'
  */
 export default{
   install (Vue) {
-    Vue.use(SideBar)
-    Vue.use(VueMaterial)
+    Vue.use(SideBar);
+    Vue.use(VueMaterial);
   }
 }

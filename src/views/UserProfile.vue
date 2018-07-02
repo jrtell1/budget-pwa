@@ -21,7 +21,7 @@ import {
   UserCard
 } from '@/views'
 
-export default{
+export default {
   components: {
     EditProfileForm,
     UserCard

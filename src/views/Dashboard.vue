@@ -275,12 +275,6 @@ export default {
         ]
       }
     }
-  },
-
-  created() {
-    setTimeout(() => {
-      this.test = true;
-    }, 3000);
   }
 }
 </script>

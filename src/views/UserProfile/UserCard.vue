@@ -22,14 +22,7 @@ export default {
       type: String,
       default: require('@/assets/img/faces/marc.jpg')
     }
-  },
-  data () {
-    return {
-    }
   }
 }
 
 </script>
-<style>
-
-</style>
